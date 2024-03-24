@@ -1,0 +1,67 @@
+{
+  "name": "miraski-website",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "author": "Bran van der Meer <bran.van.der.meer@protonmail.com>",
+  "license": "ISC",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "NODE_NO_WARNINGS=1 stmux -w always -n -M -- [ \"vite\" .. \"vitest --watch src\" ]",
+    "test": "npm run lint && vitest --run src",
+    "build": "npm run lint && vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "npm run build && vite preview",
+    "deploy": "npm version minor -m \"chore: Release version %s\" && npm run build && gh-pages -d dist"
+  },
+  "dependencies": {
+    "firebase": "^10.9.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-firebase-hooks": "^5.1.1",
+    "react-router-dom": "^6.22.3"
+  },
+  "devDependencies": {
+    "@babel/parser": "^7.24.1",
+    "@babel/plugin-syntax-import-assertions": "^7.24.1",
+    "@babel/traverse": "^7.24.1",
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "gh-pages": "^6.1.1",
+    "prettier": "^3.2.5",
+    "stmux": "^1.8.7",
+    "vite": "^5.2.6",
+    "vite-plugin-eslint": "^1.8.1",
+    "vitest": "^1.4.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "semi": false,
+    "singleQuote": true,
+    "importOrder": [
+      "<THIRD_PARTY_MODULES>",
+      "./util/(.*)$",
+      "./pages/(.*)$",
+      "./components/(.*)$"
+    ],
+    "importOrderSeparation": true,
+    "importOrderSortSpecifiers": true
+  }
+}
