@@ -1,34 +1,32 @@
 import { Link } from 'react-router-dom'
 import { ref } from 'firebase/database'
 import { db } from '../../util/firebase'
-import { useObjectVal } from 'react-firebase-hooks/database'
+import { useListVals } from 'react-firebase-hooks/database'
 
 export default function Home() {
-  const g = ref(db, 'pages/home/greeting')
-  const [greeting, greetingLoading, greetingError] = useObjectVal(g)
+  const g = ref(db, 'attendees')
+  const [attendees, attendeesLoading, attendeesError] = useListVals(g)
 
-  if (greetingLoading) return 'Loading'
-  if (greetingError) return 'Error'
+  if (attendeesLoading) return 'Loading'
+  if (attendeesError) return 'Error'
 
   return (
     <>
-      <h1 style={{ textAlign: 'center' }}>{greeting}</h1>
-      <h2 style={{ textAlign: 'center' }}>
+      <h1>MiraSki 2025</h1>
+      <p>
         <Link to="/register">Register</Link>
-      </h2>
-      <div
-        style={{
-          width: '320px',
-          height: '0',
-          margin: '0 auto',
-          paddingTop: '100%',
-          overflow: 'hidden',
-          backgroundImage: 'url("https://static.wintersport.nl/error.gif")',
-          backgroundPosition: 'top left',
-          backgroundSize: 'contain',
-          backgroundRepeat: 'no-repeat',
-        }}
-      />
+      </p>
+
+      {!attendeesLoading && !attendeesError && attendees && (
+        <>
+          <h2>Attendees</h2>
+          <ol>
+            {attendees.map((attendee) => (
+              <li key={attendee.id}>{attendee.name}</li>
+            ))}
+          </ol>
+        </>
+      )}
     </>
   )
 }
