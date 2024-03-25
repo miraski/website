@@ -1,4 +1,5 @@
-.form {
+.form--error {
+  color: red;
 }
 .form__row {
   display: block;
