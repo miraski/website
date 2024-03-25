@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { ref } from 'firebase/database'
 import { db } from '../../util/firebase'
 import { useObjectVal } from 'react-firebase-hooks/database'
@@ -11,7 +12,10 @@ export default function Home() {
 
   return (
     <>
-      <h1 style={{ textAlign: 'center', font: 'sans-serif' }}>{greeting}</h1>
+      <h1 style={{ textAlign: 'center' }}>{greeting}</h1>
+      <h2 style={{ textAlign: 'center' }}>
+        <Link to="/register">Register</Link>
+      </h2>
       <div
         style={{
           width: '320px',

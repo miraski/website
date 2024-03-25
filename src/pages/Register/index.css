@@ -1,0 +1,15 @@
+.form {
+}
+.form__row {
+  display: block;
+  margin-bottom: 1em;
+}
+.form__row > label {
+  display: block;
+}
+.form__row input[type='text'],
+.form__row input[type='email'],
+.form__row input[type='tel'] {
+  width: 100%;
+  padding: 0.2em;
+}
