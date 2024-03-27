@@ -1,0 +1,23 @@
+:root {
+  /**
+   * Colors
+   */
+  --color-a: #0f668e;
+  --color-b: #1f94ca;
+  --color-c: #35b0e8;
+  --color-d: #a8e0fb;
+  --color-e: #f5fcff;
+  --color-f: #dfeef5;
+  --color-g: #041e2a;
+  --color-h: #cae2ec;
+
+  --color-text: var(--color-g);
+  --color-text-inverted: rgba(4, 30, 42, 0.5);
+  --color-background: var(--color-b);
+  --color-inverted: rgba(245, 252, 255, 0.9);
+
+  --color-success: #55c271;
+  --color-error: #db0a43;
+  --color-disabled: var(--color-e);
+  --color-disabled-border: var(--color-f);
+}
