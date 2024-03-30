@@ -1,11 +1,11 @@
-import './css/common/normalize.v4.css'
-import './css/common/webfont.css'
-import './css/common/typography.css'
-import './css/common/colors.css'
-import './css/common/grid.css'
-import './css/common/breakpoints.css'
-import './css/common/animations.css'
-import './css/common/form.css'
+import '@/components/Common/normalize.v4.css'
+import '@/components/Common/webfont.css'
+import '@/components/Common/typography.css'
+import '@/components/Common/colors.css'
+import '@/components/Common/grid.css'
+import '@/components/Common/breakpoints.css'
+import '@/components/Common/animations.css'
+import '@/components/Common/form.css'
 
 export const metadata = {
   title: 'MiraSki',
