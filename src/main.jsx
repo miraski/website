@@ -9,6 +9,9 @@ import GetInfoApresSki from './pages/GetInfo/apres-ski'
 import GetInfoChalet from './pages/GetInfo/chalet'
 import GetInfoLocation from './pages/GetInfo/location'
 import GetInfoPartyTime from './pages/GetInfo/partytime'
+import History2017 from './pages/History/2017'
+import History2016 from './pages/History/2016'
+import History2015 from './pages/History/2015'
 import Signup from './pages/Signup'
 import Pay from './pages/Pay'
 import Error from './pages/Error'
@@ -25,6 +28,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="get-info/chalet" element={<GetInfoChalet />} />
           <Route path="get-info/location" element={<GetInfoLocation />} />
           <Route path="get-info/partytime" element={<GetInfoPartyTime />} />
+          <Route path="history/2017" element={<History2017 />} />
+          <Route path="history/2016" element={<History2016 />} />
+          <Route path="history/2015" element={<History2015 />} />
           <Route path="sign-up/:code" element={<Signup />} />
           <Route path="pay/:orderid" element={<Pay />} />
           <Route path="error/:errorid" element={<Error />} />
