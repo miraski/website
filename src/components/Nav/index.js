@@ -58,7 +58,7 @@ export default function Nav() {
             </a>
           </li>
           <li>
-            <a href="/register">
+            <a href="/sign-up">
               <strong>Sign up</strong>
               <span>for the next MiraSki</span>
             </a>
