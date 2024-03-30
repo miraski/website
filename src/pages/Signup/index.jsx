@@ -3,12 +3,18 @@ import { useNavigate, useParams } from 'react-router-dom'
 import { v4 as uuid } from 'uuid'
 import { ref, set } from 'firebase/database'
 import { db } from '../../util/firebase'
+import { useObjectVal, useListVals } from 'react-firebase-hooks/database'
 
 import { formElementsToFields, getFormErrors } from './validation'
 
 export default function Signup() {
   const { code } = useParams()
   const navigate = useNavigate()
+
+  const [limit] = useObjectVal(ref(db, 'attendeesLimit'))
+  const [attendees] = useListVals(ref(db, 'attendees'))
+  if (limit && attendees && attendees.length >= limit)
+    return (window.location.hash = '/sign-up/full')
 
   const [formErrors, setFormErrors] = useState([])
   const fieldHasError = (s) => formErrors.includes(s)

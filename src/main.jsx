@@ -13,6 +13,7 @@ import History2017 from './pages/History/2017'
 import History2016 from './pages/History/2016'
 import History2015 from './pages/History/2015'
 import Signup from './pages/Signup'
+import SignupFull from './pages/Signup/full'
 import SignupNoCode from './pages/Signup/no-code'
 import Pay from './pages/Pay'
 import Error from './pages/Error'
@@ -33,6 +34,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="history/2016" element={<History2016 />} />
           <Route path="history/2015" element={<History2015 />} />
           <Route path="sign-up" element={<SignupNoCode />} />
+          <Route path="sign-up/full" element={<SignupFull />} />
           <Route path="sign-up/:code" element={<Signup />} />
           <Route path="pay/:orderid" element={<Pay />} />
           <Route path="error/:errorid" element={<Error />} />
