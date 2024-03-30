@@ -40,7 +40,7 @@ export default function Pay() {
         </p>
         <p>
           If payment was not completed successfully,{' '}
-          <a href={'#' + useLocation().pathname} onClick={onRefresh}>
+          <a href={'/#' + useLocation().pathname} onClick={onRefresh}>
             retry
           </a>
           .

@@ -1,0 +1,34 @@
+.scrapbook {
+  margin: 0;
+  text-align: center;
+}
+.scrapbook__image {
+  margin: 1.25vmin;
+  max-width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+@media screen and (min-width: 48em) {
+  .scrapbook {
+    margin-left: -10vw;
+    padding-left: 5vw;
+    overflow: hidden;
+  }
+  .scrapbook__image {
+    width: 50%;
+    max-width: 100%;
+  }
+  .scrapbook__image:nth-child(1),
+  .scrapbook__image:nth-child(6) {
+    position: relative;
+    margin-bottom: -5vmin;
+    margin-left: -5vmin;
+  }
+  .scrapbook__image:nth-child(4) {
+    position: relative;
+    margin-bottom: -10vmin;
+    margin-right: -15vmin;
+  }
+  .scrapbook__image:nth-child(5) {
+    position: relative;
+  }
+}

@@ -21,7 +21,7 @@ export default function NotFoundPage() {
       </p>
       <p>Everybody can see the 404 error of the MiraSki website!</p>
       <p>
-        <a href="/">Go home</a>.
+        <a href="/#/">Go home</a>.
       </p>
     </article>
   )

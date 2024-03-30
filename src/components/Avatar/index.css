@@ -1,0 +1,90 @@
+.avatar {
+  margin: 0 0.5em 0 -4em;
+  position: absolute;
+}
+.profile-persona .avatar {
+  margin: 0 auto 1em;
+  position: relative;
+}
+.game__user-info .avatar {
+  position: relative;
+  margin: 0 0 1em 0;
+}
+.game__boost .avatar {
+  top: -50px;
+}
+.gameover__form .avatar {
+  position: relative;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+.profile-persona .avatar__image {
+  width: 7.8125em;
+  height: 7.8125em;
+}
+@supports (clip-path: polygon(60% 0)) {
+  .avatar__image,
+  .avatar:before {
+    width: 3.125em;
+    height: 3.125em;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 60%, 44% 100%, 9% 69%, 0 14%);
+  }
+  .attendee-list__attendee:nth-child(2n) .avatar__image,
+  .attendee-list__attendee:nth-child(2n) .avatar:before {
+    clip-path: polygon(53% 0, 100% 18%, 91% 80%, 35% 100%, 7% 74%, 0 31%);
+  }
+  .attendee-list__attendee:nth-child(3n) .avatar__image,
+  .attendee-list__attendee:nth-child(3n) .avatar:before {
+    clip-path: polygon(26% 0, 100% 28%, 91% 66%, 57% 100%, 4% 86%, 0 25%);
+  }
+  .attendee-list__attendee:nth-child(4n) .avatar__image,
+  .attendee-list__attendee:nth-child(4n) .avatar:before {
+    clip-path: polygon(50% 0, 100% 15%, 89% 79%, 57% 100%, 13% 73%, 0 47%);
+  }
+  .attendee-list__attendee:nth-child(5n) .avatar__image,
+  .attendee-list__attendee:nth-child(5n) .avatar:before {
+    clip-path: polygon(60% 0, 88% 31%, 98% 79%, 59% 100%, 5% 80%, 0 26%);
+  }
+  .profile-persona .avatar__image,
+  .profile-persona .avatar:before {
+    width: 7.8125em;
+    height: 7.8125em;
+  }
+  .avatar:before {
+    position: absolute;
+    content: '';
+    background-color: var(--color-h);
+    transform: rotateZ(-70deg);
+  }
+}
+@media screen and (min-width: 40em) {
+  .avatar {
+    margin: 0 0.5em 0 -5.5em;
+  }
+  .avatar__image,
+  .avatar:before {
+    width: 4.6875em;
+    height: 4.6875em;
+  }
+  .profile-persona .avatar__image,
+  .profile-persona .avatar:before {
+    width: 10em;
+    height: 10em;
+  }
+  .profile-persona .avatar {
+    margin: 0;
+    left: 0;
+    position: absolute;
+  }
+}
+@media screen and (min-width: 48em) {
+  .avatar {
+    margin: 0 0.5em 0 -7em;
+  }
+  .avatar__image,
+  .avatar:before {
+    width: 6.25em;
+    height: 6.25em;
+  }
+}
