@@ -1,0 +1,112 @@
+@keyframes pushlogo {
+  0%,
+  40% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(0.25);
+  }
+  90% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes pushlogo2 {
+  0%,
+  40% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(0.25);
+  }
+  90% {
+    transform: translate(-50%, -50%) scale(1.05);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+@keyframes pushsnow {
+  0%,
+  40% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(0.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.splash-screen {
+  width: 100%;
+  height: 100vh;
+  max-width: 64em;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.splash-screen div {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+}
+.splash-screen div::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(/img/knalschnee.png) center top no-repeat;
+  background-size: 100%;
+  transition: transform 1s ease-in-out;
+  animation: pushsnow 1s forwards;
+}
+.splash-screen h1 {
+  font-size: 3em;
+  color: #55c271;
+  text-align: center;
+  transform: rotate(-4deg);
+  position: absolute;
+  top: 50%;
+  right: auto;
+  left: auto;
+  width: 100%;
+  margin-top: -0.5em;
+  opacity: 0;
+}
+.splash-screen svg {
+  max-width: 90%;
+  height: auto;
+  animation: pushlogo 0.5s 0.25s;
+  display: inline-block;
+}
+@media screen and (min-width: 20em) and (max-width: 63.9375em) {
+  .splash-screen h1 {
+    font-size: calc(3em + 96 * (100vw - 320px) / (1024 - 320));
+  }
+}
+@media screen and (min-width: 40em) {
+  .splash-screen div::after {
+    background-position: center;
+  }
+  .splash-screen svg {
+    max-width: 85vw;
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: pushlogo2 0.5s 0.25s;
+  }
+}
+@media screen and (min-width: 64em) {
+  .splash-screen h1 {
+    font-size: 9em;
+  }
+}

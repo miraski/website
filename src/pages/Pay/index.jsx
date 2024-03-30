@@ -31,7 +31,7 @@ export default function Pay() {
 
   if (paypalHasBeenActive && !paypalOverlayIsActive) {
     return (
-      <>
+      <article>
         <h1>Payment</h1>
         <p>It looks like the PayPal popup has closed.</p>
         <p>
@@ -49,13 +49,14 @@ export default function Pay() {
           If you are unable to pay with PayPal, please contact{' '}
           <a href="mailto:miraski2025@proton.me">miraski2025@proton.me</a>
         </p>
-      </>
+      </article>
     )
   }
 
   return (
-    <>
+    <article>
+      <h1>Payment</h1>
       <div id="paypal-container-5TFMLHLVL98T4">Loading</div>
-    </>
+    </article>
   )
 }

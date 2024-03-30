@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1440px" height="376px" viewBox="0 0 1440 376" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>sneeuw transitie</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur stdDeviation="2" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="1" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="2" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="10" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-5">
+            <feGaussianBlur stdDeviation="7" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-6">
+            <feGaussianBlur stdDeviation="7" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-7">
+            <feGaussianBlur stdDeviation="7" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-8">
+            <feGaussianBlur stdDeviation="1" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-9">
+            <feGaussianBlur stdDeviation="1" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-10">
+            <feGaussianBlur stdDeviation="5" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-11">
+            <feGaussianBlur stdDeviation="5" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-12">
+            <feGaussianBlur stdDeviation="5" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-13">
+            <feGaussianBlur stdDeviation="1" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-14">
+            <feGaussianBlur stdDeviation="5" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-15">
+            <feGaussianBlur stdDeviation="7" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-16">
+            <feGaussianBlur stdDeviation="5" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-17">
+            <feGaussianBlur stdDeviation="5" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="DESKTOP" transform="translate(0.000000, -6324.000000)">
+            <g id="VOETER" transform="translate(-55.000000, 6292.000000)">
+                <g id="sneeuw-transitie" transform="translate(778.500000, 283.000000) rotate(-180.000000) translate(-778.500000, -283.000000) ">
+                    <polygon id="Triangle-2" fill="#DFEEF6" filter="url(#filter-1)" transform="translate(341.450684, 154.953096) rotate(24.000000) translate(-341.450684, -154.953096) " points="341.450684 56.3734364 499.034769 253.532756 183.8666 253.532756"></polygon>
+                    <polygon id="Triangle-2" fill="#DFEEF6" filter="url(#filter-2)" transform="translate(1138.033651, 150.429727) rotate(82.000000) translate(-1138.033651, -150.429727) " points="1138.03365 51.8500672 1255.9533 249.009387 1020.114 249.009387"></polygon>
+                    <polygon id="Triangle-2" fill="#CAE2EC" filter="url(#filter-3)" transform="translate(1384.291162, 280.921431) rotate(82.000000) translate(-1384.291162, -280.921431) " points="1384.29116 182.341771 1502.21081 379.501091 1266.37151 379.501091"></polygon>
+                    <polygon id="Triangle-2" fill="#A8E0FB" filter="url(#filter-4)" transform="translate(555.154904, 225.565862) rotate(171.000000) translate(-555.154904, -225.565862) " points="555.154904 183.532977 741.158514 267.598747 369.151294 267.598747"></polygon>
+                    <polygon id="Triangle-2" fill="#A8E0FB" filter="url(#filter-5)" transform="translate(158.578813, 384.962267) rotate(171.000000) translate(-158.578813, -384.962267) " points="158.578813 295.834054 260.921601 474.09048 56.2360252 474.09048"></polygon>
+                    <polygon id="Triangle-2" fill="#F5FCFF" filter="url(#filter-6)" transform="translate(1441.550093, 240.985429) rotate(171.000000) translate(-1441.550093, -240.985429) " points="1441.55009 151.857216 1543.89288 330.113642 1339.2073 330.113642"></polygon>
+                    <polygon id="Triangle-2" fill="#F5FCFF" filter="url(#filter-7)" transform="translate(949.219438, 205.064483) rotate(171.000000) translate(-949.219438, -205.064483) " points="949.219438 115.93627 1051.56223 294.192695 846.87665 294.192695"></polygon>
+                    <polygon id="Triangle-2" fill="#F5FCFF" filter="url(#filter-8)" transform="translate(290.938188, 296.178627) rotate(171.000000) translate(-290.938188, -296.178627) " points="290.938188 207.050415 393.280976 385.30684 188.5954 385.30684"></polygon>
+                    <polygon id="Triangle-2" fill="#F5FCFF" filter="url(#filter-9)" transform="translate(685.649852, 150.429727) rotate(234.000000) translate(-685.649852, -150.429727) " points="685.649852 61.3015144 787.99264 239.55794 583.307064 239.55794"></polygon>
+                    <polygon id="Triangle-2" fill="#F5FCFF" filter="url(#filter-10)" transform="translate(804.985933, 490.266851) rotate(234.000000) translate(-804.985933, -490.266851) " points="804.985933 448.233966 867.521326 532.299736 742.45054 532.299736"></polygon>
+                    <polygon id="Triangle-2" fill="#F5FCFF" filter="url(#filter-11)" transform="translate(1003.691596, 384.962267) rotate(234.000000) translate(-1003.691596, -384.962267) " points="1003.6916 342.929382 1066.22699 426.995152 941.156203 426.995152"></polygon>
+                    <polygon id="Triangle-2" fill="#F5FCFF" filter="url(#filter-12)" transform="translate(1254.351359, 324.920958) rotate(234.000000) translate(-1254.351359, -324.920958) " points="1254.35136 282.888073 1316.88675 366.953843 1191.81597 366.953843"></polygon>
+                    <polygon id="Triangle-2" fill="#F5FCFF" filter="url(#filter-13)" transform="translate(471.552142, 178.544121) rotate(234.000000) translate(-471.552142, -178.544121) " points="471.552142 136.511236 534.087535 220.577006 409.016749 220.577006"></polygon>
+                    <polygon id="Triangle-2" fill="#F5FCFF" filter="url(#filter-14)" transform="translate(89.351359, 309.663761) rotate(234.000000) translate(-89.351359, -309.663761) " points="89.3513593 267.630876 151.886752 351.696646 26.8159662 351.696646"></polygon>
+                    <polygon id="Triangle-2" fill="#F5FCFF" filter="url(#filter-15)" transform="translate(71.722846, 490.266851) rotate(234.000000) translate(-71.722846, -490.266851) " points="71.7228461 448.233966 134.258239 532.299736 9.18745306 532.299736"></polygon>
+                    <polygon id="Triangle-2" fill="#A8E0FB" filter="url(#filter-16)" transform="translate(1406.144721, 460.260772) rotate(234.000000) translate(-1406.144721, -460.260772) " points="1406.14472 418.227887 1468.68011 502.293657 1343.60933 502.293657"></polygon>
+                    <polygon id="Triangle-2" fill="#A8E0FB" filter="url(#filter-17)" transform="translate(1022.959780, 243.029845) rotate(302.000000) translate(-1022.959780, -243.029845) " points="1022.95978 136.811275 1089.65079 349.248416 956.26877 349.248416"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

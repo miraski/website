@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes splashscreen {
+  0% {
+    background-position-y: -100vh;
+    background-size: 100% 200%;
+  }
+  50% {
+    background-position-y: -50vh;
+    background-size: 100% 150%;
+  }
+  100% {
+    background-position-y: 0;
+    background-size: 100% 100%;
+  }
+}
+
+body {
+  background: #fff url('/img/schnee--bg.jpg') center top no-repeat;
+  background-size: cover;
+  color: var(--color-text);
+}
+body.homepage {
+  background: linear-gradient(
+      to bottom,
+      var(--color-g) 0%,
+      var(--color-a) 50%,
+      var(--color-d) 100%
+    )
+    no-repeat;
+  background-position-y: 0;
+  background-size: 100% 100%;
+  animation: splashscreen 0.75s forwards;
+}
+body.homepage::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('/img/sneeuw-transitie.png') no-repeat;
+  background-size: cover;
+  height: 40vh;
+  opacity: 0.5;
+}
+body.homepage.game-grid {
+  background: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  margin: 0 0 -1em;
+  flex-grow: 1;
+  flex-basis: auto;
+  background: url('/img/sneeuw-voeter-s.svg') center bottom no-repeat;
+  background-size: 100% auto;
+}
+@media screen and (min-width: 40em) {
+  .wrapper {
+    background-image: url('/img/sneeuw-voeter-m.svg');
+  }
+}
+@media screen and (min-width: 64em) {
+  .wrapper {
+    background-image: url('/img/sneeuw-voeter-l.svg');
+  }
+}
+
+.homepage .wrapper {
+  position: relative;
+  overflow: hidden;
+  background: none;
+}
+
+.wrapper::after {
+  content: '\00a0';
+  display: block;
+  margin-top: 12em;
+  height: 0;
+  visibility: hidden;
+}
+
+main,
+article {
+  margin: 0 auto;
+  padding: 0 1em;
+  max-width: 60em;
+  position: relative;
+}
+
+article {
+  margin: 4em 0 2em;
+}
+@media screen and (min-width: 48em) {
+  article {
+    margin: 4em 0 2em 10vw;
+    padding-top: 3.5em;
+  }
+}
+@media screen and (min-width: 64em) {
+  article {
+    padding-top: 5.25em;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .extra-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .extra-info__item {
+    width: calc(50% - 2em);
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+.embed-container {
+  padding-bottom: 56.25%;
+  height: 0;
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

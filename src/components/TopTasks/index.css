@@ -1,0 +1,71 @@
+.top-tasks {
+  max-width: 60em;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 15vh;
+  z-index: 9000;
+  opacity: 0;
+  animation: fadeInUpBig 0.5s 0.75s both;
+}
+.top-tasks ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+@media screen and (min-width: 40em) {
+  .top-tasks ul {
+    justify-content: space-around;
+  }
+}
+.top-tasks li {
+  padding: 0 1em;
+}
+.top-tasks a {
+  display: block;
+  padding: 0.5em;
+  color: #f5fcff;
+  text-decoration: none;
+}
+.top-tasks a strong {
+  font-family: var(--font-heading);
+  font-size: 2em;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.top-tasks a span {
+  display: block;
+  font-weight: normal;
+  text-indent: 0.25em;
+}
+@media screen and (min-width: 40em) {
+  .top-tasks {
+    position: absolute;
+    right: 0;
+    bottom: 5vh;
+    left: 0;
+  }
+  .top-tasks ul {
+    display: flex;
+    justify-content: center;
+  }
+  .top-tasks a {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 48em) {
+  .top-tasks a strong {
+    font-size: 2.5em;
+  }
+}
+@media screen and (min-width: 64em) {
+  .top-tasks a strong {
+    font-size: 3em;
+  }
+}
+@media screen and (min-width: 75em) {
+  .top-tasks a strong {
+    font-size: 3.5em;
+  }
+}
