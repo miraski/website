@@ -10,7 +10,7 @@ module.exports = {
     'plugin:react/jsx-runtime',
     'prettier',
   ],
-  ignorePatterns: ['playground', 'dist', '.eslintrc.cjs'],
+  ignorePatterns: ['playground', 'dist', 'public/js/vendor', '.eslintrc.cjs'],
   settings: {
     react: { version: 'detect' },
   },
@@ -31,6 +31,7 @@ module.exports = {
   },
   plugins: ['react', 'react-refresh'],
   rules: {
+    'no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
     'react-refresh/only-export-components': [
       'warn',
       { allowConstantExport: true },

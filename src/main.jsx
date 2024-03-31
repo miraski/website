@@ -12,6 +12,7 @@ import GetInfoPartyTime from './pages/GetInfo/partytime'
 import History2017 from './pages/History/2017'
 import History2016 from './pages/History/2016'
 import History2015 from './pages/History/2015'
+import Game from './pages/Game'
 import Signup from './pages/Signup'
 import SignupFull from './pages/Signup/full'
 import SignupNoCode from './pages/Signup/no-code'
@@ -33,6 +34,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="history/2017" element={<History2017 />} />
           <Route path="history/2016" element={<History2016 />} />
           <Route path="history/2015" element={<History2015 />} />
+          <Route path="game" element={<Game />} />
           <Route path="sign-up" element={<SignupNoCode />} />
           <Route path="sign-up/full" element={<SignupFull />} />
           <Route path="sign-up/:code" element={<Signup />} />
