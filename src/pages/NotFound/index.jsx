@@ -1,5 +1,3 @@
-'use client'
-
 export default function NotFoundPage() {
   document.body.classList.remove('homepage')
 

@@ -1,5 +1,3 @@
-'use client'
-
 import './index.css'
 
 import History from './'

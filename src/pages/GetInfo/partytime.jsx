@@ -1,5 +1,3 @@
-'use client'
-
 import '../../components/Scrapbook/index.css'
 
 export default function GetInfoPartyTimePage() {

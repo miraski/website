@@ -1,5 +1,3 @@
-'use client'
-
 import { ref } from 'firebase/database'
 import { db } from '../../util/firebase'
 import { useListVals } from 'react-firebase-hooks/database'
