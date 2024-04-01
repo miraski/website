@@ -25,7 +25,6 @@ export default function Signup() {
     // Validate all form fields
     const fields = formElementsToFields(event.currentTarget)
     const _formErrors = getFormErrors(fields)
-    console.log('_formErrors', _formErrors)
     if (_formErrors.length > 0) {
       setFormErrors(_formErrors)
       scroll(0, 0)
@@ -37,7 +36,7 @@ export default function Signup() {
     try {
       await set(ref(db, 'orders/' + orderid), fields)
     } catch (err) {
-      console.log(err)
+      console.error(err)
       navigate('/error/create-order')
       return false
     }

@@ -93,7 +93,7 @@ export default function GameComponent({ user }) {
                 </button>
               </li>
               <li className="form-field">
-                <a href="/#/leaderboard">Check out the leaderboard</a>
+                <a href="/#/game/leaderboard">Check out the leaderboard</a>
               </li>
             </ol>
           </form>
@@ -249,7 +249,7 @@ export default function GameComponent({ user }) {
                 other players that have played the MiraSki game.
               </p>
               <p>
-                <a href="/#/leaderboard">Check out the leaderboard</a>
+                <a href="/#/game/leaderboard">Check out the leaderboard</a>
               </p>
               <button className="btn game__start" type="button" data-start>
                 Spielen!

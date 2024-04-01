@@ -1,3 +1,7 @@
+import { v4 as uuid } from 'uuid'
+import { ref, set } from 'firebase/database'
+import { db } from '../../../../util/firebase'
+
 import config from '../config/score'
 import modifierManager from './modifiers'
 import stateManager from './state'
@@ -57,19 +61,9 @@ class ScoreManager {
    */
   save(action) {
     if (action) {
-      return fetch(action, {
-        method: 'POST',
-        credentials: 'same-origin',
-        headers: {
-          Accept: 'application/json',
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          name: uiManager.getName(),
-          score: this.getTotal(),
-          scoreValues: this._score,
-        }),
-      })
+      // Create order in database
+      const obj = { name: uiManager.getName(), score: this.getTotal() }
+      return set(ref(db, 'leaderboard/' + uuid()), obj)
     }
   }
 

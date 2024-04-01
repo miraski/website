@@ -51,12 +51,12 @@ export default function Nav() {
               <span>the game</span>
             </a>
           </li>
-          <li>
+          {/* <li>
             <a href="/#/login" onClick={toggleMenu}>
               <strong>Profile</strong>
               <span>showcases your MiraSkills</span>
             </a>
-          </li>
+          </li> */}
           <li>
             <a href="/#/sign-up" onClick={toggleMenu}>
               <strong>Sign up</strong>
