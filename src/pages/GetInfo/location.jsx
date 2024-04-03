@@ -37,7 +37,7 @@ export default function GetInfoLocationPage() {
           something that is rare for Sankt Anton accommodations. The ski lift is
           only 600 meters away, and at the end of the day it’s only a 250m walk
           from the Gampen slopes. Several hiking trails start directly on the
-          doorstep. A toboggan run can be accessed in the immediate vicinity
+          doorstep. A toboggan run can be accessed in the immediate vicinity.
         </p>
         <p>
           <a href="/#/get-info/chalet" className="btn btn--secondary">

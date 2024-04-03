@@ -17,23 +17,33 @@ export default function GetInfoPage() {
         skiing, partying, and having real fun!
       </p>
       <p>
-        Every year Mirabeau organises a ski event for all employees and this
-        year the event takes place in the ski resort{' '}
+        A select few Mirabeau veterans are organising a ski event for other
+        Mirabeau veterans and this year the event takes place in the ski resort{' '}
         <a href="/#/get-info/location">Sankt Anton</a>, in the west of Austria,
         surrounded by beautiful mountains.
       </p>
       <p>
-        This year we’ll stay at the catered{' '}
-        <a href="/#/get-info/chalet">chalet “Inge”</a> hosted by Wens Chalets.
+        We’ll stay at the catered <a href="/#/get-info/chalet">chalet Alber</a>{' '}
+        where we’ve been before! Again hosted by Wens Chalets.
       </p>
+      <p>The chalet is 600 meters away from the Nassereinbahn.</p>
 
       <div className="extra-info">
         <section className="extra-info__item">
           <h2>What’s included?</h2>
           <ul>
-            <li>3 nights in a luxury chalet</li>
-            <li>Breakfast, dinner &amp; snacks</li>
-            <li>Fresh towels</li>
+            <li>4 nights in a luxury chalet</li>
+            <li>
+              4 days Breakfast
+              <br />
+              <small>(Sunday, Monday, Tuesday, Wednesday)</small>
+            </li>
+            <li>
+              3 days Dinner
+              <br />
+              <small>(Saturday, Sunday, Monday, all 3 course meals)</small>
+            </li>
+            <li>Fresh linnen and towels</li>
             <li>All drinks are included (including beer &amp; wine)</li>
           </ul>
           <p>Travel costs and lunch are not included.</p>
@@ -42,32 +52,31 @@ export default function GetInfoPage() {
         <section className="extra-info__item">
           <h2>Optional:</h2>
           <p>
-            We can provide you with a skipass that will give you access to over
-            340 km of ski runs.
+            We can provide you with a skipass at a 5-10% discount that will give
+            you access to over 340 km of ski runs.
           </p>
           <p>
             Skiing and boarding equipment can be rented at destination, prices
-            starting at €69 for a 3 days depending on quality of the gear. You
-            can also take ski or snowboard lessons together with some colleagues
-            in case your skills are a little rusty.
+            starting at €100 for a 3 days depending on quality of the gear.
+            Alternatively, equipment can be rented via the chalet company at a
+            discount, we’ll contact you for that.
           </p>
         </section>
 
         <section className="extra-info__item">
           <h2>Price</h2>
           <p>
-            Based on previous editions, the price will be around €250,- The rest
-            of your trip is sponsored by Mirabeau. As soon as the exact price is
-            available you’ll be informed.
+            The price will be €530,- for the chalet. The cost of your skipass,{' '}
+            rental gear, and drinks/food outside of the chalet will be yours.
           </p>
         </section>
 
         <section className="extra-info__item">
           <h2>When</h2>
           <p>
-            We’ll leave on Friday afternoon, the 26th of January and we’ll be
-            back in the Netherlands on the early morning of Wednesday the 31th
-            of January.
+            We’ll leave on Friday afternoon 10 January 2025 or early Saturday
+            morning 11 January 2025. We’ll head home on the early morning of
+            Wednesday 15 January 2025.
           </p>
         </section>
       </div>
