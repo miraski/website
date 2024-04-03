@@ -115,6 +115,9 @@
   font-weight: normal;
   text-indent: 0.25em;
 }
+.nav [aria-expanded='false'] ~ ul {
+  display: none;
+}
 .nav [aria-expanded='false'] ~ ul li {
   opacity: 0;
   transition-property: none;
