@@ -33,8 +33,9 @@ export default function Signup() {
 
     // Create order in database
     const orderid = uuid()
+    const data = { datetime: +new Date(), ...fields }
     try {
-      await set(ref(db, 'orders/' + orderid), fields)
+      await set(ref(db, 'orders/' + orderid), data)
     } catch (err) {
       console.error(err)
       navigate('/error/create-order')

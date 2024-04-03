@@ -1,4 +1,5 @@
 import './index.css'
+import { sortAttendees } from './sort.js'
 import Avatar from '../Avatar'
 
 export default function AttendeeList({ attendees }) {
@@ -10,7 +11,7 @@ export default function AttendeeList({ attendees }) {
         className="attendee-list-toggle"
       />
       <ol className="attendee-list">
-        {attendees.map((attendee) => (
+        {sortAttendees(attendees).map((attendee) => (
           <li key={attendee.id} className="attendee-list__attendee">
             <Avatar name={attendee.name} shortname={attendee.id} />
             <strong className="attendee-list__name">{attendee.name}</strong>
