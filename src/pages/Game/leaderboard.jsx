@@ -3,6 +3,7 @@ import { db } from '../../util/firebase'
 import { useListVals } from 'react-firebase-hooks/database'
 
 import './leaderboard.css'
+import { filterSortLeaderboard } from './filtersort.js'
 
 export default function GameLeaderboardPage() {
   const g = ref(db, 'leaderboard')
@@ -22,7 +23,7 @@ export default function GameLeaderboardPage() {
       <div className="leaderboard-container">
         {!leaderboardLoading && !leaderboardError && (
           <ol className="leaderboard leaderboard--part1">
-            {leaderboard.map((record, i) => (
+            {filterSortLeaderboard(leaderboard).map((record, i) => (
               <li key={i} className="leaderboard__record">
                 <mark className="leaderboard__name">{record.name}</mark>
                 <small className="leaderboard__score">{record.score}</small>
