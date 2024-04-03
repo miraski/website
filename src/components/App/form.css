@@ -6,6 +6,9 @@
 .form-fields * {
   box-sizing: border-box;
 }
+.form-fields--payment li {
+  margin-top: 0.5em;
+}
 
 .form-field {
   margin: 0 0 1em;

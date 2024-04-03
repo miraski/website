@@ -153,12 +153,12 @@ export default function Signup() {
             <input type="text" id="date-of-birth" name="date-of-birth" />
           </li>
           <li>
-            <h3>Price: €500.</h3>
+            <h3>Price: €530.</h3>
             <p>You will be asked to pay immediately.</p>
           </li>
           <li className="form-field">
             <label>I understand that:</label>
-            <ol className="form-fields">
+            <ol className="form-fields form-fields--payment">
               <li>
                 <label htmlFor="acknowledge-paid">
                   <input
@@ -179,7 +179,7 @@ export default function Signup() {
                     required
                   />{' '}
                   I have no right to a refund, since the organisers have an
-                  obligation to pay (e.g. for chalet reservation)
+                  obligation to pay for chalet reservation
                 </label>
               </li>
               <li>
