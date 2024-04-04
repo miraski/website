@@ -4,9 +4,7 @@ import './index.css'
 export default function Nav() {
   const menu = document.getElementById('menu');
   const [menuIsOpen, setMenuOpen] = useState(false)
-  const toggleMenu = (e) => {
-    console.log(e)
-    console.log(this)
+  const toggleMenu = (_evt) => {
     setMenuOpen(!menuIsOpen)
     if (!menuIsOpen) {
       document.documentElement.classList.add('nav-open');

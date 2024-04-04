@@ -49,7 +49,7 @@ export default function Signup() {
   const errorTexts = {
     code: 'Invite code is invalid',
     name: 'Name is invalid',
-    email: 'Email is invalid',
+    email: 'Email address is invalid',
     phone: 'Phone is invalid',
     activity: 'Pick at least one activity',
     dateOfBirth: 'Date of birth is invalid',
@@ -88,19 +88,19 @@ export default function Signup() {
             className={`form-field ${fieldHasError('name') ? 'form-field--error' : ''}`}
           >
             <label htmlFor="name">Full Name</label>
-            <input id="name" name="name" type="text" />
+            <input id="name" name="name" type="text" minLength="6" required />
           </li>
           <li
             className={`form-field ${fieldHasError('email') ? 'form-field--error' : ''}`}
           >
             <label htmlFor="email">Email address</label>
-            <input type="email" id="email" name="email" />
+            <input type="email" id="email" name="email" required />
           </li>
           <li
             className={`form-field ${fieldHasError('phone') ? 'form-field--error' : ''}`}
           >
             <label htmlFor="phone">Mobile phone</label>
-            <input id="phone" name="phone" type="tel" />
+            <input id="phone" name="phone" type="tel" required />
             <p>
               <small>Enter a phone number which has a WhatsApp account</small>
             </p>
@@ -151,7 +151,7 @@ export default function Signup() {
             <label htmlFor="date-of-birth">
               Date of birth <small>(format: 31-12-1970)</small>
             </label>
-            <input type="text" id="date-of-birth" name="date-of-birth" />
+            <input type="text" id="date-of-birth" name="date-of-birth" pattern="[0-3]\d-[01]\d-[12]\d{3}" required />
           </li>
           <li>
             <h3>Price: €530.</h3>

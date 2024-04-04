@@ -63,15 +63,18 @@ select[disabled] {
 .form-field--error [type='tel'],
 .form-field--error [type='password'],
 .form-field--error [type='number'],
-.form-field--error select {
-  border-color: var(--color-error);
-}
+.form-field--error select,
 .form-field--error [type='text'][disabled],
 .form-field--error [type='email'][disabled],
 .form-field--error [type='tel'][disabled],
 .form-field--error [type='password'][disabled],
 .form-field--error [type='number'][disabled],
-.form-field--error select[disabled] {
+.form-field--error select[disabled] [type='text']:user-invalid,
+[type='email']:user-invalid,
+[type='tel']:user-invalid,
+[type='password']:user-invalid,
+[type='number']:user-invalid,
+select:user-invalid {
   border-color: var(--color-error);
 }
 .form-field--success [type='text'],
