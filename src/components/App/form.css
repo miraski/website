@@ -169,9 +169,9 @@ select:focus {
 }
 
 .btn--secondary {
-  background: #f5fcff;
-  border: 2px solid var(--color-b);
-  color: var(--color-b);
+  background: var(--color-e);
+  border: 2px solid var(--color-b-contrast);
+  color: var(--color-b-contrast);
   box-shadow: none;
   font-size: 1em;
   transition:
@@ -182,9 +182,9 @@ select:focus {
 .btn--secondary:hover,
 .btn--secondary:active {
   background: #fff;
-  border-color: var(--color-c);
+  border-color: var(--color-c-contrast);
   box-shadow: none;
-  color: var(--color-c);
+  color: var(--color-c-contrast);
 }
 .btn[type='submit'] {
   margin-top: 1em;

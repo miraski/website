@@ -2,24 +2,29 @@ import { useState } from 'react'
 import './index.css'
 
 export default function Nav() {
+  const menu = document.getElementById('menu');
   const [menuIsOpen, setMenuOpen] = useState(false)
-  const toggleMenu = () => {
+  const toggleMenu = (e) => {
+    console.log(e)
+    console.log(this)
     setMenuOpen(!menuIsOpen)
     if (!menuIsOpen) {
-      document.documentElement.classList.add('nav-open')
+      document.documentElement.classList.add('nav-open');
+      menu.hidden = false;
+      menu.querySelector(':not([disabled])').focus();
     } else {
-      document.documentElement.classList.remove('nav-open')
+      document.documentElement.classList.remove('nav-open');
+      menu.hidden = true;
     }
   }
 
-  const navCl = `nav ${menuIsOpen ? 'nav-open' : ''}`
-
   return (
-    <nav className={navCl}>
+    <nav className="nav">
       <div>
         <button
           onClick={toggleMenu}
           className="nav__toggle"
+          aria-haspopup="true"
           aria-expanded={menuIsOpen}
           aria-controls="menu"
         >
