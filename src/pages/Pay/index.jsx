@@ -7,13 +7,14 @@ export default function Pay() {
       </p>
       <p>
         <a
-          href="https://tikkie.me/pay/kpbd90kiscmgumo3i99e"
+          href="https://betaalverzoek.rabobank.nl/betaalverzoek/?id=q-D83_C7TfOr0CWGwbgtLw"
           target="_blank"
           rel="noreferrer"
         >
-          https://tikkie.me/pay/kpbd90kiscmgumo3i99e
+          https://betaalverzoek.rabobank.nl/betaalverzoek/?id=q-D83_C7TfOr0CWGwbgtLw
         </a>
       </p>
+      <p><img src="/img/pay-qr.png" alt="QR Code for €530 payment request" /></p>
     </article>
   )
 }
