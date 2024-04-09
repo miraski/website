@@ -1,5 +1,3 @@
-import './index.css'
-
 import History from './'
 
 export default function History2017Page() {
@@ -51,9 +49,9 @@ function HistoryText() {
     <>
       <p className="introduction">
         Looking back on the MiraSki 2017 event, we can only conclude that the
-        Austrian mountain village Anton is indeed a Holy place. Our visit there
-        left us with memories of fresh snow, Jäger, presidents, Johnny Däpp,
-        Willy shots, beer, more Johnny Däpp and great ski runs.
+        Austrian mountain village Sankt Anton is indeed a Holy place. Our visit
+        there left us with memories of fresh snow, Jäger, presidents, Johnny
+        Däpp, Willy shots, beer, more Johnny Däpp and great ski runs.
       </p>
       <p>
         The trip started of on Friday with some road tripping, but simply

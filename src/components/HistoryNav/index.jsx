@@ -1,3 +1,5 @@
+import './index.css'
+
 export default function HistoryNav({ active }) {
   return (
     <nav className="history-nav-container">

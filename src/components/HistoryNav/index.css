@@ -14,11 +14,15 @@
   height: 4em;
   padding: 0;
   margin: 0 auto;
-  overflow: hidden;
+  overflow: scroll;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-wrap: nowrap;
   list-style: none;
+}
+@media screen and (min-width: 42em) {
+  .history-nav {
+    justify-content: center;
+  }
 }
 .history-nav__link {
   padding: 0.5em;

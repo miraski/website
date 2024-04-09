@@ -1,5 +1,3 @@
-import './index.css'
-
 import History from './'
 
 export default function History2015Page() {
