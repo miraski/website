@@ -44,6 +44,8 @@ const attendees = [
 function HistoryText() {
   return (
     <>
+      <p className="introduction">Fieberbrunn</p>
+
       <div className="embed-container">
         <iframe
           src="http://www.youtube.com/embed/arMfjouGDhY?rel=0"
@@ -51,8 +53,8 @@ function HistoryText() {
           allowfullscreen
         ></iframe>
       </div>
-
       <p className="introduction">“Hoch die Hande”</p>
+
       <p>
         In 2016 the MiraSki event landed in Fieberbrunn, part of the Saalbach
         skiing area in Austria. The “Sonnefeld” chalet suited all of the

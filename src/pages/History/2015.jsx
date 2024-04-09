@@ -45,6 +45,7 @@ const attendees = [
 function HistoryText() {
   return (
     <>
+      <p className="introduction">Ischgl</p>
       <p className="introduction">
         The stage for the 9th edition of MiraSki was set in Ischgl and
         introduced the Digital natives to the Kuhstall, and the caftmanship of
@@ -74,8 +75,8 @@ function HistoryText() {
         it’s Russian casino atmosphere.
       </p>
       <p>
-        “Relax., If you can&hellip;” is the tagline of this Austrian ski area
-        and this turned out be an accurate description.
+        “Relax. If you can&hellip;” is the tagline of this Austrian ski area and
+        this turned out be an accurate description.
       </p>
 
       <figure className="scrapbook">

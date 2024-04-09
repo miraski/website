@@ -113,6 +113,16 @@ function HistoryText() {
         team member received a MiraSki 2017-flask. Cheers to MiraSki 2017 and
         we’ll see you in 2018!
       </p>
+      <figure className="scrapbook">
+        <img src="/img/history/2017/3.jpg" className="scrapbook__image" />
+        <img src="/img/history/2017/7.jpg" className="scrapbook__image" />
+        <img src="/img/history/2017/4.jpg" className="scrapbook__image" />
+        <img src="/img/history/2017/1.jpg" className="scrapbook__image" />
+        <img src="/img/history/2017/8.jpg" className="scrapbook__image" />
+        {/* <img src="/img/history/2017/5.jpg" className="scrapbook__image" /> */}
+        <img src="/img/history/2017/6.jpg" className="scrapbook__image" />
+        <img src="/img/history/2017/2.jpg" />
+      </figure>
       <h2>They enjoyed “Johnny Däpp”</h2>
     </>
   )

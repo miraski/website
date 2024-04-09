@@ -1,36 +1,22 @@
 import './index.css'
 
 export default function HistoryNav({ active }) {
+  const years = [/*2019, 2018,*/ 2017, 2016, 2015, 2014, 2013, 2012]
+
   return (
     <nav className="history-nav-container">
       <ul className="history-nav">
-        <li>
-          <a
-            href="/#/history/2017"
-            className="history-nav__link"
-            aria-selected={active === 2017}
-          >
-            2017
-          </a>
-        </li>
-        <li>
-          <a
-            href="/#/history/2016"
-            className="history-nav__link"
-            aria-selected={active === 2016}
-          >
-            2016
-          </a>
-        </li>
-        <li>
-          <a
-            href="/#/history/2015"
-            className="history-nav__link"
-            aria-selected={active === 2015}
-          >
-            2015
-          </a>
-        </li>
+        {years.map((year) => (
+          <li key={year}>
+            <a
+              href={`/#/history/${year}`}
+              className="history-nav__link"
+              aria-selected={active === year}
+            >
+              {year}
+            </a>
+          </li>
+        ))}
       </ul>
     </nav>
   )

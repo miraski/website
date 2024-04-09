@@ -9,7 +9,7 @@ export default function History({ year, HistoryText, attendees }) {
       <section>
         <h1>{year}</h1>
         <HistoryText />
-        <AttendeeList attendees={attendees} />
+        {attendees.length && <AttendeeList attendees={attendees} />}
       </section>
       <HistoryNav active={year} />
     </article>
