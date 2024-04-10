@@ -220,6 +220,7 @@ export default function GameComponent({ user }) {
             <button className="btn btn--secondary" type="button" data-rules>
               About this game
             </button>
+            <a className="btn btn--secondary" href="/#/game/leaderboard">Check out the leaderboard</a>
           </div>
 
           <div className="game__about-game">
