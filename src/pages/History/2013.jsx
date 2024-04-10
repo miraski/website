@@ -30,17 +30,15 @@ function HistoryText() {
     <>
       <p className="introduction">Sölden</p>
 
-      <div className="embed-container">
-        <iframe
-          src="http://www.youtube.com/embed/1woBNg8jnJw?rel=0"
-          frameBorder="0"
-          allowFullScreen
-        ></iframe>
-      </div>
+      {/* https://www.youtube.com/watch?v=1woBNg8jnJw */}
+      <video controls width="100%">
+        <source src="/video/2013.mp4" type="video/mp4" />
+        <source src="/video/2013.webm" type="video/webm" />
+      </video>
 
-      <figure className="scrapbook">
-        <img src="/img/history/2013/1.jpg" className="scrapbook__image" />
-      </figure>
+      <p style={{ marginTop: '2em', maxWidth: 'none' }}>
+        <img src="/img/history/2013/1.jpg" />
+      </p>
 
       <h2 className="alt">These heroes &lsquo;war dabei&rsquo;</h2>
     </>

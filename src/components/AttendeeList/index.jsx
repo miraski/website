@@ -17,7 +17,7 @@ export default function AttendeeList(props) {
       />
       <ol className="attendee-list">
         {sortAttendees(attendees).map((attendee) => (
-          <li key={attendee.id} className="attendee-list__attendee">
+          <li key={attendee.name} className="attendee-list__attendee">
             <Avatar name={attendee.name} shortname={attendee.id} />
             <strong className="attendee-list__name">{attendee.name}</strong>
             <span className="attendee-list__activities">

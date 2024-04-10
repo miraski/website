@@ -53,6 +53,13 @@ function HistoryText() {
         there left us with memories of fresh snow, Jäger, presidents, Johnny
         Däpp, Willy shots, beer, more Johnny Däpp and great ski runs.
       </p>
+
+      {/* https://vimeo.com/254297314 */}
+      <video controls width="100%">
+        <source src="/video/2017.mp4" type="video/mp4" />
+        <source src="/video/2017.webm" type="video/webm" />
+      </video>
+
       <p>
         The trip started of on Friday with some road tripping, but simply
         hopping on a plane was also an popular option this year. Eventually

@@ -33,13 +33,11 @@ function HistoryText() {
     <>
       <p className="introduction">Finkenberg</p>
 
-      <div className="embed-container">
-        <iframe
-          src="http://www.youtube.com/embed/XaFJIaeixZA?rel=0"
-          frameBorder="0"
-          allowFullScreen
-        ></iframe>
-      </div>
+      {/* https://www.youtube.com/watch?v=XaFJIaeixZA */}
+      <video controls width="100%">
+        <source src="/video/2012.mp4" type="video/mp4" />
+        <source src="/video/2012.webm" type="video/webm" />
+      </video>
 
       <h2 className="alt">These heroes &lsquo;war dabei&rsquo;</h2>
     </>

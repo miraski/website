@@ -25,7 +25,7 @@ const attendees = [
   { id: 'cwiltink', name: 'Céryl Wiltink' },
   { id: 'heiniw', name: 'Heini Withagen' },
   { id: 'apoppe', name: 'Aukje Poppe' },
-  { id: 'svandenakker', name: 'Suzan van Rooijen' },
+  { id: 'svanrooijen', name: 'Suzan van Rooijen' },
   { id: 'phalenbeek', name: 'Pieter Halenbeek' },
   { id: 'mplatvoet', name: 'Mark Platvoet' },
   { id: 'rhenneman', name: 'Robbert Henneman' },
@@ -46,13 +46,11 @@ function HistoryText() {
     <>
       <p className="introduction">Fieberbrunn</p>
 
-      {/* <div className="embed-container">
-        <iframe
-          src="http://www.youtube.com/embed/arMfjouGDhY?rel=0"
-          frameBorder="0"
-          allowFullScreen
-        ></iframe>
-      </div> */}
+      {/* https://vimeo.com/162646699 */}
+      <video controls width="100%">
+        <source src="/video/2016.mp4" type="video/mp4" />
+        <source src="/video/2016.webm" type="video/webm" />
+      </video>
 
       <p className="introduction">“Hoch die Hande”</p>
 
