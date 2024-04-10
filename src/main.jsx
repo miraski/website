@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { HashRouter, Route, Routes } from 'react-router-dom'
+import ScrollToTop from './util/hooks/ScrollToTop'
 
 import App from './components/App'
 import Home from './pages/Home'
@@ -29,6 +30,7 @@ import NotFound from './pages/NotFound'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <HashRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<App />}>
           <Route index element={<Home />} />

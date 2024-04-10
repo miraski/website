@@ -1,4 +1,5 @@
 import { useRef, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import './index.css'
 
 import Game from './js/Game'
@@ -93,7 +94,7 @@ export default function GameComponent({ user }) {
                 </button>
               </li>
               <li className="form-field">
-                <a href="/#/game/leaderboard">Check out the leaderboard</a>
+                <Link to="/game/leaderboard">Check out the leaderboard</Link>
               </li>
             </ol>
           </form>
@@ -220,7 +221,9 @@ export default function GameComponent({ user }) {
             <button className="btn btn--secondary" type="button" data-rules>
               About this game
             </button>
-            <a className="btn btn--secondary" href="/#/game/leaderboard">Check out the leaderboard</a>
+            <Link className="btn btn--secondary" to="/game/leaderboard">
+              Check out the leaderboard
+            </Link>
           </div>
 
           <div className="game__about-game">
@@ -250,7 +253,7 @@ export default function GameComponent({ user }) {
                 other players that have played the MiraSki game.
               </p>
               <p>
-                <a href="/#/game/leaderboard">Check out the leaderboard</a>
+                <Link to="/game/leaderboard">Check out the leaderboard</Link>
               </p>
               <button className="btn game__start" type="button" data-start>
                 Spielen!

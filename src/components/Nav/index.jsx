@@ -1,18 +1,19 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import './index.css'
 
 export default function Nav() {
-  const menu = document.getElementById('menu');
+  const menu = document.getElementById('menu')
   const [menuIsOpen, setMenuOpen] = useState(false)
   const toggleMenu = (_evt) => {
     setMenuOpen(!menuIsOpen)
     if (!menuIsOpen) {
-      document.documentElement.classList.add('nav-open');
-      menu.hidden = false;
-      menu.querySelector(':not([disabled])').focus();
+      document.documentElement.classList.add('nav-open')
+      menu.hidden = false
+      menu.querySelector(':not([disabled])').focus()
     } else {
-      document.documentElement.classList.remove('nav-open');
-      menu.hidden = true;
+      document.documentElement.classList.remove('nav-open')
+      menu.hidden = true
     }
   }
 
@@ -31,40 +32,40 @@ export default function Nav() {
 
         <ul id="menu">
           <li>
-            <a href="/#/" onClick={toggleMenu}>
+            <Link to="/" onClick={toggleMenu}>
               <strong>Home</strong>
               <span>is where the Jäger is</span>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/#/get-info" onClick={toggleMenu}>
+            <Link to="/get-info" onClick={toggleMenu}>
               <strong>Get info</strong>
               <span>about the event</span>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/#/history/2017" onClick={toggleMenu}>
+            <Link to="/history/2017" onClick={toggleMenu}>
               <strong>History</strong>
               <span>of this ski event</span>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/#/game" onClick={toggleMenu}>
+            <Link to="/game" onClick={toggleMenu}>
               <strong>Play</strong>
               <span>the game</span>
-            </a>
+            </Link>
           </li>
           {/* <li>
-            <a href="/#/login" onClick={toggleMenu}>
+            <Link to="/login" onClick={toggleMenu}>
               <strong>Profile</strong>
               <span>showcases your MiraSkills</span>
-            </a>
+            </Link>
           </li> */}
           <li>
-            <a href="/#/sign-up" onClick={toggleMenu}>
+            <Link to="/sign-up" onClick={toggleMenu}>
               <strong>Sign up</strong>
               <span>for the next MiraSki</span>
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

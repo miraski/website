@@ -46,13 +46,14 @@ function HistoryText() {
     <>
       <p className="introduction">Fieberbrunn</p>
 
-      <div className="embed-container">
+      {/* <div className="embed-container">
         <iframe
           src="http://www.youtube.com/embed/arMfjouGDhY?rel=0"
           frameBorder="0"
-          allowfullscreen
+          allowFullScreen
         ></iframe>
-      </div>
+      </div> */}
+
       <p className="introduction">“Hoch die Hande”</p>
 
       <p>

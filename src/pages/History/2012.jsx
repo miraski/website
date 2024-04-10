@@ -37,7 +37,7 @@ function HistoryText() {
         <iframe
           src="http://www.youtube.com/embed/XaFJIaeixZA?rel=0"
           frameBorder="0"
-          allowfullscreen
+          allowFullScreen
         ></iframe>
       </div>
 

@@ -1,10 +1,11 @@
+import { Link } from 'react-router-dom'
 import './index.css'
 
 export default function Avatar({ name, shortname }) {
   const img = shortname === 'null' ? 'null.svg' : `${shortname}.jpg`
   return (
     <figure className="avatar">
-      <a href={`/#/profile/${shortname}`}>
+      <Link to={`/profile/${shortname}`}>
         <img
           src={`/img/avatars/${img}`}
           className="avatar__image"
@@ -12,7 +13,7 @@ export default function Avatar({ name, shortname }) {
           height="100"
           alt={`Avatar of ${name}`}
         />
-      </a>
+      </Link>
     </figure>
   )
 }

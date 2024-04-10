@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './index.css'
 
 export default function HistoryNav({ active }) {
@@ -8,13 +9,13 @@ export default function HistoryNav({ active }) {
       <ul className="history-nav">
         {years.map((year) => (
           <li key={year}>
-            <a
-              href={`/#/history/${year}`}
+            <Link
+              to={`/history/${year}`}
               className="history-nav__link"
               aria-selected={active === year}
             >
               {year}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>

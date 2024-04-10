@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { ref } from 'firebase/database'
 import { db } from '../../util/firebase'
 import { useListVals } from 'react-firebase-hooks/database'
@@ -17,7 +18,7 @@ export default function GameLeaderboardPage() {
         digital world? Check out who’s on top of the MiraSki Game Leaderboard.
       </p>
       <p>
-        Beat the others, <a href="/#/game">play the game</a>.
+        Beat the others, <Link to="/game">play the game</Link>.
       </p>
 
       <div className="leaderboard-container">

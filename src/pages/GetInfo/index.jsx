@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { ref } from 'firebase/database'
 import { db } from '../../util/firebase'
 import { useListVals } from 'react-firebase-hooks/database'
@@ -19,12 +20,13 @@ export default function GetInfoPage() {
       <p>
         A select few Mirabeau veterans are organising a ski event for other
         Mirabeau veterans and this year the event takes place in the ski resort{' '}
-        <a href="/#/get-info/location">Sankt Anton</a>, in the west of Austria,
-        surrounded by beautiful mountains.
+        <Link to="/get-info/location">Sankt Anton</Link>, in the west of
+        Austria, surrounded by beautiful mountains.
       </p>
       <p>
-        We’ll stay at the catered <a href="/#/get-info/chalet">chalet Alber</a>{' '}
-        where we’ve been before! Again hosted by Wens Chalets.
+        We’ll stay at the catered{' '}
+        <Link to="/get-info/chalet">chalet Alber</Link> where we’ve been before!
+        Again hosted by Wens Chalets.
       </p>
       <p>The chalet is 600 meters away from the Nassereinbahn.</p>
 
@@ -83,10 +85,10 @@ export default function GetInfoPage() {
 
       <div className="cta-container">
         <p>
-          <a className="btn" href="/#/get-info/location">
+          <Link className="btn" to="/get-info/location">
             <span className="extra-text extra-text--480">tell me </span>
             about St. Anton
-          </a>
+          </Link>
         </p>
       </div>
 

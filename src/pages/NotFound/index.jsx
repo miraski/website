@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 export default function NotFoundPage() {
   document.body.classList.remove('homepage')
 
@@ -19,7 +21,7 @@ export default function NotFoundPage() {
       </p>
       <p>Everybody can see the 404 error of the MiraSki website!</p>
       <p>
-        <a href="/#/">Go home</a>.
+        <Link to="/">Go home</Link>.
       </p>
     </article>
   )

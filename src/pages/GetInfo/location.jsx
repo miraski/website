@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import '../../components/Scrapbook/index.css'
 
 export default function GetInfoLocationPage() {
@@ -13,8 +14,8 @@ export default function GetInfoLocationPage() {
         Ski Arlberg ski area, which can compete with the best skiing in Europe.
         They don’t call it the “Cradle of Alpine skiing” for nothing. It’s a
         snowy paradise of the highest calibre and at the same time a very cool
-        place to enjoy some great <a href="/#/get-info/apres-ski">après-ski</a>{' '}
-        parties!
+        place to enjoy some great{' '}
+        <Link to="/get-info/apres-ski">après-ski</Link> parties!
       </p>
       <p>
         In total, the ski area offers 340 kilometres of groomed slopes and an
@@ -40,9 +41,9 @@ export default function GetInfoLocationPage() {
           doorstep. A toboggan run can be accessed in the immediate vicinity.
         </p>
         <p>
-          <a href="/#/get-info/chalet" className="btn btn--secondary">
+          <Link to="/get-info/chalet" className="btn btn--secondary">
             Tell me err’thing
-          </a>
+          </Link>
         </p>
       </section>
 
@@ -59,9 +60,9 @@ export default function GetInfoLocationPage() {
           23.00.
         </p>
         <p>
-          <a href="/#/get-info/partytime" className="btn btn--secondary">
+          <Link to="/get-info/partytime" className="btn btn--secondary">
             I need examples!
-          </a>
+          </Link>
         </p>
       </section>
     </article>

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './index.css'
 
 export default function TopTasks() {
@@ -5,22 +6,22 @@ export default function TopTasks() {
     <nav className="top-tasks">
       <ul>
         <li>
-          <a href="/#/get-info">
+          <Link to="/get-info">
             <strong>Get info</strong>
             <span>about the event</span>
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/#/history/2017">
+          <Link to="/history/2017">
             <strong>History</strong>
             <span>of this ski event</span>
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/#/game">
+          <Link to="/game">
             <strong>Play</strong>
             <span>the game</span>
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>
