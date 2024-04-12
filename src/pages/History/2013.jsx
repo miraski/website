@@ -1,3 +1,4 @@
+import Video from '../../components/Video'
 import History from './'
 
 export default function History2013Page() {
@@ -31,10 +32,7 @@ function HistoryText() {
       <p className="introduction">Sölden</p>
 
       {/* https://www.youtube.com/watch?v=1woBNg8jnJw */}
-      <video controls width="100%">
-        <source src="/video/2013.mp4" type="video/mp4" />
-        <source src="/video/2013.webm" type="video/webm" />
-      </video>
+      <Video file="2013" />
 
       <p style={{ marginTop: '2em', maxWidth: 'none' }}>
         <img src="/img/history/2013/1.jpg" />

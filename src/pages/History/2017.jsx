@@ -1,3 +1,4 @@
+import Video from '../../components/Video'
 import History from './'
 
 export default function History2017Page() {
@@ -55,10 +56,7 @@ function HistoryText() {
       </p>
 
       {/* https://vimeo.com/254297314 */}
-      <video controls width="100%">
-        <source src="/video/2017.mp4" type="video/mp4" />
-        <source src="/video/2017.webm" type="video/webm" />
-      </video>
+      <Video file="2017" />
 
       <p>
         The trip started of on Friday with some road tripping, but simply

@@ -1,3 +1,4 @@
+import Video from '../../components/Video'
 import History from './'
 
 export default function History2018Page() {
@@ -37,10 +38,7 @@ function HistoryText() {
       <p className="introduction">Sankt Anton</p>
 
       {/* https://vimeo.com/272267492 */}
-      <video controls width="100%">
-        <source src="/video/2018.mp4" type="video/mp4" />
-        <source src="/video/2018.webm" type="video/webm" />
-      </video>
+      <Video file="2018" />
 
       <h2 className="alt">These heroes &lsquo;war dabei&rsquo;</h2>
     </>

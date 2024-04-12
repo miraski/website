@@ -1,3 +1,4 @@
+import Video from '../../components/Video'
 import History from './'
 
 export default function History2016Page() {
@@ -47,10 +48,7 @@ function HistoryText() {
       <p className="introduction">Fieberbrunn</p>
 
       {/* https://vimeo.com/162646699 */}
-      <video controls width="100%">
-        <source src="/video/2016.mp4" type="video/mp4" />
-        <source src="/video/2016.webm" type="video/webm" />
-      </video>
+      <Video file="2016" />
 
       <p className="introduction">“Hoch die Hande”</p>
 

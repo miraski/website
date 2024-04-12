@@ -7,7 +7,7 @@
   "license": "ISC",
   "scripts": {
     "start": "npm run dev",
-    "dev": "NODE_NO_WARNINGS=1 stmux -w always -n -M -- [ \"vite\" .. \"vitest --watch src\" ]",
+    "dev": "NODE_NO_WARNINGS=1 stmux -w always -n -M -- [ \"vite --host\" .. \"vitest --watch src\" ]",
     "test": "npm run lint && vitest --run src",
     "build": "npm run lint && vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
@@ -54,6 +54,7 @@
   },
   "prettier": {
     "tabWidth": 2,
+    "printWidth": 80,
     "semi": false,
     "singleQuote": true,
     "importOrder": [
