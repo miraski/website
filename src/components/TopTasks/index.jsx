@@ -12,7 +12,7 @@ export default function TopTasks() {
           </Link>
         </li>
         <li>
-          <Link to="/history/2017">
+          <Link to="/history/2018">
             <strong>History</strong>
             <span>of this ski event</span>
           </Link>
