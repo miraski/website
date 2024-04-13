@@ -6,7 +6,8 @@ export default function Video({ file }) {
       controls
       preload="auto"
       poster={`/video/${file}.jpg`}
-      data-setup='{"fluid": true}'
+      data-setup='{ "fluid": true }'
+      style={{ width: '100%', height: 'auto' }}
     >
       <source src={`/video/${file}.mp4`} type="video/mp4" />
       <source src={`/video/${file}.webm`} type="video/webm" />
