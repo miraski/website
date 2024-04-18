@@ -10,6 +10,7 @@ import GetInfoApresSki from './pages/GetInfo/apres-ski'
 import GetInfoChalet from './pages/GetInfo/chalet'
 import GetInfoLocation from './pages/GetInfo/location'
 import GetInfoPartyTime from './pages/GetInfo/partytime'
+import GetReady from './pages/GetReady'
 import History2019 from './pages/History/2019'
 import History2018 from './pages/History/2018'
 import History2017 from './pages/History/2017'
@@ -39,6 +40,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="get-info/chalet" element={<GetInfoChalet />} />
           <Route path="get-info/location" element={<GetInfoLocation />} />
           <Route path="get-info/partytime" element={<GetInfoPartyTime />} />
+          <Route path="get-ready" element={<GetReady />} />
           <Route path="history/2019" element={<History2019 />} />
           <Route path="history/2018" element={<History2018 />} />
           <Route path="history/2017" element={<History2017 />} />
