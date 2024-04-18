@@ -6,7 +6,6 @@ export default function GetReadyPage() {
         As the most important event of the year is coming up, preparation is
         everything. Get ready to own the slopes and the bar!
       </p>
-      <p></p>
 
       <h2 style={{ marginBottom: '0.5em' }}>Skiing &amp; Snowboarding</h2>
       <p>Take technique lessons:</p>

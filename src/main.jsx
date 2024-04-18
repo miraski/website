@@ -19,6 +19,7 @@ import History2015 from './pages/History/2015'
 import History2014 from './pages/History/2014'
 import History2013 from './pages/History/2013'
 import History2012 from './pages/History/2012'
+import Games from './pages/Game/list'
 import Game from './pages/Game'
 import GameLeaderboard from './pages/Game/leaderboard'
 import Signup from './pages/Signup'
@@ -49,6 +50,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="history/2014" element={<History2014 />} />
           <Route path="history/2013" element={<History2013 />} />
           <Route path="history/2012" element={<History2012 />} />
+          <Route path="games" element={<Games />} />
           <Route path="game" element={<Game />} />
           <Route path="game/leaderboard" element={<GameLeaderboard />} />
           <Route path="sign-up" element={<SignupNoCode />} />
