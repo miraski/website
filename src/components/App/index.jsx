@@ -1,6 +1,10 @@
 import { useEffect } from 'react'
 import { useLocation, Outlet } from 'react-router-dom'
+import { ref } from 'firebase/database'
+import { db } from '../../util/firebase'
+import { useObjectVal } from 'react-firebase-hooks/database'
 
+import AppStatusContext from '../../context/AppStatusContext'
 import Nav from '../Nav'
 import './normalize.v4.css'
 import './webfont.css'
@@ -21,10 +25,21 @@ export default function App() {
     }
   }, [isHomepage])
 
+  const [appStatusData, appStatusLoading, appStatusError] = useObjectVal(
+    ref(db, 'appStatus'),
+  )
+  const appStatus = {
+    getInfoPageOnline: false,
+  }
+  if (!appStatusLoading && !appStatusError) {
+    appStatus.getInfoPageOnline = appStatusData.getInfoPageOnline
+  }
+  console.log({ appStatusData, appStatusLoading, appStatusError, appStatus })
+
   return (
-    <>
+    <AppStatusContext.Provider value={appStatus}>
       {!isHomepage ? <Nav /> : null}
       <Outlet />
-    </>
+    </AppStatusContext.Provider>
   )
 }

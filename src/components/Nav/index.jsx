@@ -1,8 +1,11 @@
-import { useState } from 'react'
+import { useState, useContext } from 'react'
 import { Link } from 'react-router-dom'
+import AppStatusContext from '../../context/AppStatusContext'
 import './index.css'
 
 export default function Nav() {
+  const appStatus = useContext(AppStatusContext)
+
   const menu = document.getElementById('menu')
   const [menuIsOpen, setMenuOpen] = useState(false)
   const toggleMenu = (_evt) => {
@@ -37,12 +40,14 @@ export default function Nav() {
               <span>is where the Jäger is</span>
             </Link>
           </li>
-          <li>
-            <Link to="/get-info" onClick={toggleMenu}>
-              <strong>Get info</strong>
-              <span>about the event</span>
-            </Link>
-          </li>
+          {appStatus.getInfoPageOnline && (
+            <li>
+              <Link to="/get-info" onClick={toggleMenu}>
+                <strong>Get info</strong>
+                <span>about the event</span>
+              </Link>
+            </li>
+          )}
           <li>
             <Link to="/history/2017" onClick={toggleMenu}>
               <strong>History</strong>

@@ -1,16 +1,22 @@
+import { useContext } from 'react'
 import { Link } from 'react-router-dom'
+import AppStatusContext from '../../context/AppStatusContext'
 import './index.css'
 
 export default function TopTasks() {
+  const appStatus = useContext(AppStatusContext)
+
   return (
     <nav className="top-tasks">
       <ul>
-        <li>
-          <Link to="/get-info">
-            <strong>Get info</strong>
-            <span>about the event</span>
-          </Link>
-        </li>
+        {appStatus.getInfoPageOnline && (
+          <li>
+            <Link to="/get-info">
+              <strong>Get info</strong>
+              <span>about the event</span>
+            </Link>
+          </li>
+        )}
         <li>
           <Link to="/history/2018">
             <strong>History</strong>
